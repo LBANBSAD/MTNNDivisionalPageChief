@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mtnn-divisional-page-cfo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mtnnDivisionalPageCfo/MtnnDivisionalPageCfoWebPart.js",
+          "manifest": "./src/webparts/mtnnDivisionalPageCfo/MtnnDivisionalPageCfoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MtnnDivisionalPageCfoWebPartStrings": "lib/webparts/mtnnDivisionalPageCfo/loc/{locale}.js"
+  }
+}

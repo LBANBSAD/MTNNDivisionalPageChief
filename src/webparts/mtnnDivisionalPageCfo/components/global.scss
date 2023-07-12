@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+@font-face {
+  font-family: "MTNBrighterSans-Medium";
+  src: url("../components/Assets/MTNBrighterSansLight.eot");
+  src: url("../components/Assets/MTNBrighterSansLight.woff")
+    format("woff");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MTNBrighterSans-Medium, "Gothic A1";
+}
+
