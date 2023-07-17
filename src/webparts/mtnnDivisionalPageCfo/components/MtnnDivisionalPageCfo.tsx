@@ -25,7 +25,7 @@ export default class MtnnDivisionalPageCfo extends React.Component<IMtnnDivision
     return (
       <div className={styles.mainContainer}>
         <div className={styles.Container}>
-          {this.state.CFOWebPart?.map((item, i) => (
+          {this.state.chiefWebPart?.map((item, i) => (
             <div className={styles.Picture} key={i} style={{
              background: `url(${item?.Pictures})`,backgroundPosition: "center",backgroundSize: "cover"
               }}>
@@ -36,7 +36,7 @@ export default class MtnnDivisionalPageCfo extends React.Component<IMtnnDivision
             </div>
             ))}
         </div>
-        {this.state.CFOWebPart?.map((item, i) => (
+        {this.state.chiefWebPart?.map((item, i) => (
           <div className={styles.contentRight} key={i}>
             <h3>{item?.Header}</h3>
             <p>{item?.Content}</p>
@@ -56,13 +56,13 @@ export default class MtnnDivisionalPageCfo extends React.Component<IMtnnDivision
 
     sp.web.lists
 
-      .getByTitle(`CFOWebPart`)
+      .getByTitle(`chiefWebPart`)
 
       .items.get()
 
       .then((res) => {
 
-        this.setState({ CFOWebPart: res });
+        this.setState({ chiefPart: res });
 
       });
 
