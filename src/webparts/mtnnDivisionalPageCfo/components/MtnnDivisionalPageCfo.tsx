@@ -13,7 +13,7 @@ export default class MtnnDivisionalPageCfo extends React.Component<IMtnnDivision
 
     this.state = {
 
-      CFOWebPart: [],
+      chiefWebPart: [],
 
     };
 
@@ -62,7 +62,7 @@ export default class MtnnDivisionalPageCfo extends React.Component<IMtnnDivision
 
       .then((res) => {
 
-        this.setState({ chiefPart: res });
+        this.setState({ chiefWebPart: res });
 
       });
 
